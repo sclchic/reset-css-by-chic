@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>重置后的标签们</title>
+    <meta charset="utf-8"/>
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="">
+    <link rel="stylesheet" href="css/try1.css"/>
+</head>
+<body>
+<h2>div</h2>
+<div>我是div啊</div>
+<hr/>
+
+<h2>footer</h2>
+<footer>
+    Some copyright info or perhaps some author info for an &lt;article&gt;?
+</footer>
+<hr/>
+
+<h2>header</h2>
+<header>
+    任何接受 flow content 的元素。注意 header 元素不能作为address, footer 或其他 header 元素的子元素。
+</header>
+<hr/>
+
+<h2>dl dt dd</h2>
+<dl>
+    <dt>dt:Firefox</dt>
+    <dt>Mozilla Firefox</dt>
+    <dt>Fx</dt>
+    <dd>
+        dd: A free, open source, cross-platform, graphical web browser
+        developed by the Mozilla Corporation and hundreds of volunteers.
+    </dd>
+</dl>
+<hr/>
+
+<h2>ul ol li</h2>
+<ul>
+    <li>first item</li>
+    <li>second item
+        <ol>
+            <li>second item first subitem</li>
+            <li>second item second subitem</li>
+            <li>second item third subitem</li>
+        </ol>
+    </li>
+    <li>third item</li>
+</ul>
+<hr/>
+
+<h2>hgroup</h2>
+<hgroup>
+    <h1>文章或者网页的标题集合</h1>
+    <h2>可以包含h1,h2,h3~h6标签</h2>
+</hgroup>
+<hr/>
+
+<h2>标题h系列</h2>
+<hgroup>
+    <h1>我是h1</h1>
+    <h2>我是h2</h2>
+    <h3>我是h3</h3>
+    <h4>我是h4</h4>
+    <h5>我是h5</h5>
+    <h6>我是h6</h6>
+</hgroup>
+<hr/>
+
+<h2>pre</h2>
+<pre>
+    浏览器中默认表现了字体类型，不会自动这行导致超出、重置样式最好设置overflow:auto;
+cols
+Contains the preferred count of characters that a line should have. It was a non-standard synonym of width. To achieve such an effect, use CSS width instead.
+width
+Contains the preferred count of characters that a line should have. Though technically still implemented, this attribute has no visual effect; to achieve such an effect, use CSS width instead.
+wrap
+Is a hint indicating how the overflow must happen. In modern browser this hint is ignored and no visual effect results in its present; to achieve such an effect, use CSS white-space instead.
+</pre>
+<hr/>
+
+<h2>code</h2>
+<p>标签用于表示计算机源代码或者其他机器可以阅读的文本内<code>var name = chic;</code>浏览器中默认表现了字体类型</p>
+<hr/>
+
+<h2>表单</h2>
+<form action="">
+    <button name="button">button</button>
+    <label>
+        Choose a browser from this list:
+        <input list="browsers" name="myBrowser" />
+    </label>
+    <datalist id="browsers">
+        <option value="datalist">
+        <option value="Firefox">
+        <option value="Internet Explorer">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    <fieldset>
+        <legend>legend: Title</legend>
+        <input type="button" value="button"/>
+        <input type="checkbox" value="checkbox"/>
+        <input type="hidden" value="hidden"/>
+        <input type="number" value="number"/>
+        <input type="image" value="image"/>
+        <input type="password" value="password"/>
+        <input type="radio" value="radio"/>
+        <input type="reset" value="reset"/>
+        <input type="submit" value="submit"/>
+        <input type="tel" value="tel"/>
+        <input type="text" value="text"/>
+    </fieldset>
+    <select>
+        <optgroup label="optgroup">
+            <option>Option 1.1</option>
+        </optgroup>
+        <optgroup label="Group 2">
+            <option>Option 2.1</option>
+            <option>Option 2.2</option>
+        </optgroup>
+        <optgroup label="Group 3" disabled>
+            <option>Option 3.1</option>
+            <option>Option 3.2</option>
+            <option>Option 3.3</option>
+        </optgroup>
+    </select>
+    <progress value="70" max="100">70 %</progress>
+</form>
+
+<h2>meter</h2>
+<p>Heat the oven to <meter min="200" max="500" value="350">350 degrees</meter>.</p>
+<hr/>
+
+<h2>p</h2>
+<p>我是p啊</p>
+<hr/>
+
+<h2>blockquote</h2>
+<blockquote cite="http://developer.mozilla.org">
+    <p>blockquote：This is a quotation taken from the Mozilla Developer Center.</p>
+</blockquote>
+<hr/>
+
+<h2>table</h2>
+<p>Simple table with header</p>
+<table>
+    <tr>
+        <th>First name</th>
+        <th>Last name</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+    </tr>
+    <tr>
+        <td>Jane</td>
+        <td>Doe</td>
+    </tr>
+</table>
+
+<p>Table with thead, tfoot, and tbody</p>
+<table>
+    <thead>
+    <tr>
+        <th>Header content 1</th>
+        <th>Header content 2</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <td>Footer content 1</td>
+        <td>Footer content 2</td>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+        <td>Body content 1</td>
+        <td>Body content 2</td>
+    </tr>
+    </tbody>
+</table>
+
+<p>Table with colgroup</p>
+<table>
+    <colgroup span="4"></colgroup>
+    <tr>
+        <th>Countries</th>
+        <th>Capitals</th>
+        <th>Population</th>
+        <th>Language</th>
+    </tr>
+    <tr>
+        <td>USA</td>
+        <td>Washington D.C.</td>
+        <td>309 million</td>
+        <td>English</td>
+    </tr>
+    <tr>
+        <td>Sweden</td>
+        <td>Stockholm</td>
+        <td>9 million</td>
+        <td>Swedish</td>
+    </tr>
+</table>
+
+<p>Table with colgroup and col</p>
+<table>
+    <colgroup>
+        <col style="background-color: #0f0">
+        <col span="2">
+    </colgroup>
+    <tr>
+        <th>Lime</th>
+        <th>Lemon</th>
+        <th>Orange</th>
+    </tr>
+    <tr>
+        <td>Green</td>
+        <td>Yellow</td>
+        <td>Orange</td>
+    </tr>
+</table>
+
+<p>Simple table with caption</p>
+<table>
+    <caption>Awesome caption</caption>
+    <tr>
+        <td>Awesome data</td>
+    </tr>
+</table>
+<hr/>
+
+<h2>aside</h2>
+<aside>接受流内容的任何元素。请注意，元素不能是 address 元素的后代。</aside>
+<hr/>
+
+<h2>article</h2>
+<article>
+    接受流内容的任何元素。一篇 article 的作者信息可以通过 address 元素提供，但它不适用于嵌套 address 元素。<br/>
+    <article class="film_review">
+        <header>
+            <h2>Jurassic Park</h2>
+        </header>
+        <section class="main_review">
+            <p>Dinos were great!</p>
+        </section>
+        <section class="user_reviews">
+            <article class="user_review">
+                <p>Way too scary for me.</p>
+                <footer>
+                    <p>
+                        Posted on <time datetime="2015-05-16 19:00">May 16</time> by Lisa.
+                    </p>
+                </footer>
+            </article>
+            <article class="user_review">
+                <p>I agree, dinos are my favorite.</p>
+                <footer>
+                    <p>
+                        Posted on <time datetime="2015-05-17 19:00">May 17</time> by Tom.
+                    </p>
+                </footer>
+            </article>
+        </section>
+        <footer>
+            <p>
+                Posted on <time datetime="2015-05-15 19:00">May 15</time> by Staff.
+            </p>
+        </footer>
+    </article>
+</article>
+<hr/>
+
+<h2>details</h2>
+<details>
+    <summary>Some details</summary>
+    <p>兼容性不咋地</p>
+</details>
+<hr/>
+
+<h2>figure</h2>
+<figure>
+    <img src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png" alt="An awesome picture">
+    <figcaption>Fig1. MDN Logo</figcaption>
+</figure>
+<hr/>
+
+<h2>nav</h2>
+<nav>
+    <ul>
+        <li><a href="#">导航链接</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<hr/>
+
+<h2>section</h2>
+<section>
+    <h2>Heading</h2>
+    <img>some image</img>
+</section>
+<hr/>
+
+<h2>i</h2>
+<p>
+    原本只是倾斜，现在用来体现一种“交替的声音”，通俗将就是普通段落文字中文艺的或2B的文字。像是外语（例如我经常写文章时混搭一些英文或日语）、科技术语（如超氧化物歧化酶SOD）或是用做排版的斜体文字。<br/>
+    语义化的 i 元素可以用来表示：外文单词、生物分类、科技术语、船名、剧本舞台方位、乐谱、三个代表思想或手写文字 <br/>
+    <b class="character">尔康：</b><i class="voiceover">好了，终于把粘人的紫薇给弄走了，接下来就是二人独处的大好时光了！</i>
+</p>
+<hr/>
+
+<h2>b</h2>
+<p>
+    原本就是加粗，现在表示“文体突出”文字，通俗将就是普通段落文字中突出不安分的文字。像是文档概要中的关键字，评论中的产品名。或者代表强调的排版方式。<br/>
+    元素该在什么地方使用呢？就是下面这些元素都不适合的时候：表重要的strong，表强调的em，表标题的h1–h6，表高亮或标记文本的mark等
+</p>
+<hr/>
+
+<h2>em</h2>
+<p>
+    原本表示强调，现在指有压力的强调 <br/>
+    <b>皇阿玛：</b><em>立即</em>给我传太医。
+</p>
+<hr/>
+
+<h2>strong</h2>
+<p>
+    原本表示更强强调，现指相当重要;
+</p>
+<hr/>
+
+<h2>mark</h2>
+<p>
+    <mark>fd</mark>
+</p>
+<hr/>
+
+<h2>cite</h2>
+<p>标签通常表示它所包含的文本对某个参考文献的引用，比如书籍或者杂志的标题<cite>[ISO-0000]</cite>.</p>
+<hr/>
+
+<h2>abbr</h2>
+<p>I do <abbr title="Hypertext Markup Language">HTML</abbr></p>
+<hr/>
+
+<h2>var</h2>
+<p>
+    var标签代表一个数学表达式或一个编程环境变量：<br/>
+    A simple equation: <var>x</var> = <var>y</var> + 2
+</p>
+<hr/>
+
+<h2>samp</h2>
+<p>
+    说明：&lt;samp&gt; 标签表示一段用户应该对其没有什么其他解释的文本字符。要从正常的上下文抽取这些字符时，通常要用到这个标签。
+    <br/>
+    字符序列 <samp>ae</samp> 可能会被转换为 &aelig; 连字字符。
+</p>
+<hr/>
+
+<h2>kbd</h2>
+<p>
+    说明：&lt;kbd&gt; 标签定义键盘文本,经常用在于计算机相关的文档和手册中。
+    <br/>
+    键入 <kbd>quit</kbd> 来退出程序，或者键入 <kbd>menu</kbd> 来返回主菜单。
+</p>
+<hr/>
+
+<h2>q</h2>
+<q>
+    说明：标签定义短的引用
+    <br/>
+    <q>Here is a short quotation here is a short quotation</q>
+</q>
+<hr/>
+
+<h2>address</h2>
+<address>
+    You can contact author at <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+    If you see any bugs, please <a href="mailto:webmaster@somedomain.com">contact webmaster</a>.<br>
+    You may also want to visit us:<br>
+    Mozilla Foundation<br>
+    1981 Landings Drive<br>
+    Building K<br>
+    Mountain View, CA 94043-0801<br>
+    USA <br/>
+    说明： address标签定义文档或文章的作者/拥有者的联系信息。
+    如果 address 元素位于 body 元素内，则它表示文档联系信息。
+    如果 address 元素位于 article 元素内，则它表示文章的联系信息
+</address>
+<hr/>
+
+
+<h2>dfn</h2>
+<p>&lt;dfn&gt; 标签可标记那些对特殊术语或短语的定义<dfn id="def-internet">The Internet</dfn> is a global system of interconnected networks that use the Internet Protocol Suite (TCP/IP) to serve billions of users worldwide.</p>
+<hr/>
+
+<h2>del</h2>
+<p>
+    说明：带有已删除部分和新插入部分的文本 <br/>
+    a dozen is <del>20</del> <ins>12</ins> pieces
+</p>
+<hr/>
+
+<script>
+    // 设置缩放比率
+    var scale = 1 / window.devicePixelRatio;
+    document.querySelector('meta[name="viewport"]').setAttribute('content','width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+    // 设置根元素字体大小即1rem的值
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px';
+</script>
+</body>
+</html>

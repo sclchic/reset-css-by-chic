@@ -1,0 +1,113 @@
+/**
+ * @file  : 功能样式，从常用样式方法中抽离，按需使用
+ * @author: Chic
+ * @update: 2/18/2016
+ */
+.f-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.f-dib {
+  display: inline-block;
+}
+.f-dn {
+  display: none;
+}
+.f-db {
+  display: block;
+}
+.f-fl {
+  float: left;
+}
+.f-fr {
+  float: right;
+}
+.f-pr {
+  position: relative;
+}
+.f-oh {
+  overflow: hidden;
+}
+.f-fwn {
+  font-weight: normal;
+}
+.f-fwb {
+  font-weight: bold;
+}
+.f-tal {
+  text-align: left;
+}
+.f-tac {
+  text-align: center;
+}
+.f-tar {
+  text-align: right;
+}
+.f-vam {
+  vertical-align: middle;
+}
+/*强制不折行*/
+.f-wsn {
+  word-wrap: normal;
+  white-space: nowrap;
+}
+/*类似于pre，不同之处在于会自动折行，超出不会出现滚动条*/
+.f-pre {
+  overflow: hidden;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/*强制折行*/
+.f-wwb {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.f-ti {
+  overflow: hidden;
+  text-indent: -30000px;
+}
+.f-ti2 {
+  text-indent: 2em;
+}
+.f-lhn {
+  line-height: normal;
+}
+.f-tdu,
+.f-tdu:hover {
+  text-decoration: underline;
+}
+.f-tdn,
+.f-tdn:hover {
+  text-decoration: none;
+}
+/*实现省略号*/
+.f-toe {
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.f-cp {
+  cursor: pointer;
+}
+.f-cd {
+  cursor: default;
+}
+.f-ch {
+  cursor: help;
+}
+.f-cm {
+  cursor: move;
+}
+/*禁止选中文本（如无文本选中需求，此为必选项）*/
+.f-usn {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}

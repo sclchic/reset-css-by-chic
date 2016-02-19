@@ -1,0 +1,441 @@
+/**
+ * @file  : 移动端初始化样式文件样例
+ * @author: Chic
+ * @update: 2/17/2016
+ */
+/**
+ * @file  : reset文件
+ * @author: Chic
+ * @update: 2/17/2016
+ */
+html,
+body,
+div,
+footer,
+header,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+hgroup,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+input,
+textarea,
+optgroup,
+output,
+progress,
+meter,
+p,
+blockquote,
+hr,
+table,
+caption,
+th,
+td,
+button,
+aside,
+article,
+details,
+summary,
+figure,
+figcaption,
+nav,
+menu,
+section {
+  padding: 0;
+  margin: 0;
+}
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+}
+/*修复 IE 8/9，HTML5新元素不能正确显示的问题，定义为inline-block元素*/
+/*修复Chrome, Firefox, 和Opera的progress元素没有以baseline垂直对齐*/
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+html {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  color: #333;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+html * {
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  line-height: 1.5;
+  -webkit-overflow-scrolling: touch;
+}
+/*媒体查询设置字体大小*/
+@media screen and (max-width: 321px) {
+  html * {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 400px) {
+  html * {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html * {
+    font-size: 38px;
+  }
+}
+/* 统一了样式*/
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+del,
+ins {
+  text-decoration: none;
+}
+/*mark标签用来突出显示部分文本，设置后会有一个高亮背景，但是此标签是HTML5中的新标签，在低版本浏览器并不识别，所以需要重置样式。*/
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+label,
+summary {
+  cursor: default;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+optgroup {
+  font-weight: normal;
+}
+li {
+  list-style: none;
+}
+/*去除 IE6-9 和 Firefox 3 中a内部img元素默认的边框*/
+img {
+  border: 0;
+  vertical-align: middle;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  /*去掉点击时的outline焦点框，同时保证使用键盘可以显示焦点框，这个操作针对所有浏览器*/
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+q:before,
+q:after {
+  content: none;
+}
+hr {
+  height: 0;
+  margin: 0;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #c00;
+}
+/**
+ * 对不支持controls属性的浏览器，audio元素给以隐藏
+ * 移除iOS5设备中多余的高度
+ * 在IE8之前的浏览器是不支持controls属性，这里的办法是直接隐藏该元素
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/*修复 IE 7/8/9，Firefox 3 和 Safari 4 中hidden属性不起作用的问题*/
+[hidden] {
+  display: none;
+}
+/*修正abbr元素在 Firefox 外其他浏览器没有下划线的问题*/
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/*防止所有浏览器中的sub和sup影响行高*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/*修复 IE9 中的overflow的怪异表现*/
+svg:not(:root) {
+  overflow: hidden;
+}
+/*大部分浏览器的pre在overflow的时候会直接溢出去，这里加上overflow:auto让它出现滚动条*/
+pre {
+  overflow: auto;
+}
+/*用于修复 Safari 5 和 Chrome 中奇怪的字体设置，统一字体样式*/
+code,
+kbd,
+pre,
+samp {
+  font: inherit;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  vertical-align: middle;
+}
+/* 统一 IE 8/9/10/11 overflow属性为visible -- 在 IE 8/9/10/11里的button默认的overflow是hidden，这里统一为visible*/
+button {
+  overflow: visible;
+}
+/* 统一各浏览器text-transform（定义文本的大小写状态,此属性对中文无意义）不会继承的问题*/
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. 避免 Android 4.0.* 中的 WebKit bug ，该bug会破坏原生的audio和video的控制器
+ * 2. 更正 iOS 中无法设置可点击的input的问题
+ * 3. 统一其他类型的input的光标样式
+ * 这里将可点击的按钮，统一设置鼠标样式为pointer，提高了可用性
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+/*重置按钮禁用时光标样式*/
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * 移除 Firefox 4+ 的内边距
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+}
+/**
+ * 统一设置行高为normal
+ * Firefox浏览器会默认设置input[type="button"]的行高为normal !important，这里统一样式
+ */
+input {
+  line-height: normal;
+}
+/**
+ * 1. 修正 IE 8/9 box-sizing 被设置为content-box的问题
+ * 2. 移除 IE 8/9 中多余的内边距
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+}
+/**
+ * 修正 Chrome 中 input [type="number"] 在特定高度和 font-size 时,下面一个箭头光标变成cursor: text 效果
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. 修正 Safari 5 和 Chrome 中appearance被设置为searchfield的问题
+ * 2. 修正 Safari 5 和 Chrome 中box-sizing被设置为border-box的问题
+ * searchfield是CSS3的属性，它可以让一个div元素看上去像任何元素，但是浏览器支持性并不好，
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: border-box;
+  /* 2 */
+}
+/**
+ * 移除原生默认样式，统一search的输入框样式
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 移除 IE8-11 中默认的垂直滚动条
+ */
+textarea {
+  overflow: auto;
+}
+/* 表格
+   ========================================================================== */
+/**
+ * 删除表单元间的间距。
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*统一左对齐，标题单元文字不加粗*/
+caption,
+th {
+  text-align: left;
+  font-weight: normal;
+}
+/**
+ * @file  : 功能样式，从常用样式方法中抽离，按需使用
+ * @author: Chic
+ * @update: 2/18/2016
+ */
+.f-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.f-dib {
+  display: inline-block;
+}
+.f-dn {
+  display: none;
+}
+.f-db {
+  display: block;
+}
+.f-fl {
+  float: left;
+}
+.f-fr {
+  float: right;
+}
+.f-pr {
+  position: relative;
+}
+.f-oh {
+  overflow: hidden;
+}
+.f-fwn {
+  font-weight: normal;
+}
+.f-fwb {
+  font-weight: bold;
+}
+.f-tal {
+  text-align: left;
+}
+.f-tac {
+  text-align: center;
+}
+.f-tar {
+  text-align: right;
+}
+.f-vam {
+  vertical-align: middle;
+}
+/*强制不折行*/
+.f-wsn {
+  word-wrap: normal;
+  white-space: nowrap;
+}
+/*类似于pre，不同之处在于会自动折行，超出不会出现滚动条*/
+.f-pre {
+  overflow: hidden;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/*强制折行*/
+.f-wwb {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.f-ti {
+  overflow: hidden;
+  text-indent: -30000px;
+}
+.f-ti2 {
+  text-indent: 2em;
+}
+.f-lhn {
+  line-height: normal;
+}
+.f-tdu,
+.f-tdu:hover {
+  text-decoration: underline;
+}
+.f-tdn,
+.f-tdn:hover {
+  text-decoration: none;
+}
+/*实现省略号*/
+.f-toe {
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.f-cp {
+  cursor: pointer;
+}
+.f-cd {
+  cursor: default;
+}
+.f-ch {
+  cursor: help;
+}
+.f-cm {
+  cursor: move;
+}
+/*禁止选中文本（如无文本选中需求，此为必选项）*/
+.f-usn {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
