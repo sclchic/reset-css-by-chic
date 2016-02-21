@@ -58,7 +58,6 @@ video {
 }
 
 html {
-    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
     color: #333;
     background: #fff;
     -webkit-text-size-adjust: 100%;
@@ -74,12 +73,15 @@ html * {
 }
 
 body {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
     line-height: 1.5;
+    font-weight: normal;
+    font-size: 28px;
     -webkit-overflow-scrolling: touch;
 }
 
 /*媒体查询设置字体大小*/
-@media screen and (max-width: 321px) {
+/*@media screen and (max-width: 321px) {
     html * {
         font-size: 32px;
     }
@@ -95,7 +97,7 @@ body {
     html * {
         font-size: 38px;
     }
-}
+}*/
 
 /* 统一了样式*/
 i, cite, em, var, address, dfn {
@@ -117,6 +119,7 @@ label, summary{
 }
 
 h1, h2, h3, h4, h5, h6, b, strong, optgroup {
+    font: inherit;
     font-weight: normal;
 }
 

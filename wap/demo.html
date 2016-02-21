@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>样例</title>
+    <meta charset="utf-8"/>
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="">
+    <link rel="stylesheet" href="css/demo.css"/>
+</head>
+<body>
+<header>
+    哎呦天呀-首页
+</header>
+<script>
+    var scale = 1 / window.devicePixelRatio;
+    document.querySelector('meta[name="viewport"]').setAttribute('content','width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px';
+    document.body.style.fontSize = 14/scale + 'px';
+</script>
+</body>
+</html>
