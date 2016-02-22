@@ -1,0 +1,25 @@
+{
+  "name": "wapInit",
+  "version": "1.0.0",
+  "description": "使用插件完成px和rem之间的转换",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sclchic/reset-css-by-chic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sclchic/reset-css-by-chic/issues"
+  },
+  "homepage": "https://github.com/sclchic/reset-css-by-chic",
+  "devDependencies": {
+    "autoprefixer-core": "^6.0.1",
+    "gulp-less": "^3.0.5",
+    "gulp-postcss": "^6.1.0",
+    "postcss-px2rem": "^0.2.0"
+  }
+}

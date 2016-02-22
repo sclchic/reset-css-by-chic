@@ -76,26 +76,25 @@ body {
     font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
     line-height: 1.5;
     font-weight: normal;
-    font-size: 28px;
     -webkit-overflow-scrolling: touch;
 }
 
 /*媒体查询设置字体大小*/
 /*@media screen and (max-width: 321px) {
     html * {
-        font-size: 32px;
-    }
+         font-size: 16px;
+     }
 }
 
 @media screen and (min-width: 321px) and (max-width:400px) {
     html * {
-        font-size: 34px;
+        font-size: 17px;
     }
 }
 
 @media screen and (min-width: 400px) {
     html * {
-        font-size: 38px;
+        font-size: 19px;
     }
 }*/
 
@@ -119,7 +118,7 @@ label, summary{
 }
 
 h1, h2, h3, h4, h5, h6, b, strong, optgroup {
-    font: inherit;
+    font-size: 100%;
     font-weight: normal;
 }
 
@@ -152,7 +151,7 @@ q {
 hr {
     height: 0;
     margin: 0;
-    border-width: 0 0 1px 0;
+    border-width: 0 0 1px 0; /*no*/
     border-style: solid;
     border-color: #c00;
 }
@@ -174,7 +173,7 @@ audio:not([controls]) {
 
 /*修正abbr元素在 Firefox 外其他浏览器没有下划线的问题*/
 abbr[title] {
-    border-bottom: 1px dotted;
+    border-bottom: 1px dotted; /*no*/
 }
 
 /*防止所有浏览器中的sub和sup影响行高*/

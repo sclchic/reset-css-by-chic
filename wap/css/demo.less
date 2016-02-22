@@ -7,12 +7,32 @@
 @import "core/reset";
 @import "core/function";
 
-header {
-    background-color: #cc0000;
-    height: 1.5625rem;
-    color: #fff;
-    text-align: center;
-    line-height: 1.5625rem;
-    font-size: 1.2857em;
+html {
+    background-color: #ee0a3b;
 }
 
+div.item-section {
+    &.i-s-header {
+        text-align: center;
+
+        img {
+            width: 750px;
+        }
+    }
+
+    ul.i-s-list {
+        padding: 10px;
+
+        li.flag {
+            display: table;
+            width: 100%;
+            margin-bottom: 1px; /*no*/
+            background-color: #fff;
+
+            .flag-item {
+                display: table-cell;
+                padding: 10px 0;
+            }
+        }
+    }
+}
