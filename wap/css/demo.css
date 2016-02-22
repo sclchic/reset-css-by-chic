@@ -553,12 +553,12 @@ html {
   background-color: #ee0a3b;
 }
 
-div.item-section.i-s-header {
+div.item-section div.i-s-header {
   text-align: center;
 }
 
-div.item-section.i-s-header img {
-  width: 10rem;
+div.item-section div.i-s-header img {
+  width: 100%;
 }
 
 div.item-section ul.i-s-list {
@@ -575,4 +575,94 @@ div.item-section ul.i-s-list li.flag {
 div.item-section ul.i-s-list li.flag .flag-item {
   display: table-cell;
   padding: 0.133333rem 0;
+  vertical-align: top;
+}
+
+div.item-section ul.i-s-list li.flag > a {
+  width: 2.133333rem;
+  height: 2.133333rem;
+}
+
+div.item-section ul.i-s-list li.flag > a img {
+  width: 2.4rem;
+  height: 2.4rem;
+  vertical-align: top;
+}
+
+div.item-section ul.i-s-list li.flag div.figcaption {
+  padding: 0.133333rem;
+  position: relative;
+}
+
+div.item-section ul.i-s-list li.flag div.figcaption div.flag-title a {
+  color: #333;
+}
+
+div.item-section ul.i-s-list li.flag div.figcaption div.flag-price {
+  padding: 0.066667rem 0 0.133333rem 0;
+}
+
+div.item-section ul.i-s-list li.flag div.figcaption div.flag-price span {
+  display: inline-block;
+  background-color: #ee0a3b;
+  vertical-align: middle;
+  border-radius: 0.066667rem;
+  padding: 0.066667rem 0.133333rem;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 0.2rem;
+}
+
+div.item-section ul.i-s-list li.flag div.figcaption div.flag-price strong {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #ee0a3b;
+}
+
+[data-dpr="1"] div.item-section ul.i-s-list li.flag div.figcaption div.flag-price strong {
+  font-size: 16px;
+}
+
+[data-dpr="2"] div.item-section ul.i-s-list li.flag div.figcaption div.flag-price strong {
+  font-size: 32px;
+}
+
+[data-dpr="3"] div.item-section ul.i-s-list li.flag div.figcaption div.flag-price strong {
+  font-size: 48px;
+}
+
+div.item-section ul.i-s-list li.flag div.figcaption div.flag-price small {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #ee0a3b;
+}
+
+[data-dpr="1"] div.item-section ul.i-s-list li.flag div.figcaption div.flag-price small {
+  font-size: 12px;
+}
+
+[data-dpr="2"] div.item-section ul.i-s-list li.flag div.figcaption div.flag-price small {
+  font-size: 24px;
+}
+
+[data-dpr="3"] div.item-section ul.i-s-list li.flag div.figcaption div.flag-price small {
+  font-size: 36px;
+}
+
+div.item-section ul.i-s-list li.flag div.figcaption div.flag-type {
+  color: #ff3600;
+}
+
+div.item-section ul.i-s-list li.flag div.figcaption a.flag-btn {
+  position: absolute;
+  padding: 0.066667rem 0.133333rem;
+  background-color: #ee0a3b;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  bottom: 0.066667rem;
+  right: 0.133333rem;
+  border-radius: 0.066667rem;
 }

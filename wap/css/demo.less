@@ -12,11 +12,11 @@ html {
 }
 
 div.item-section {
-    &.i-s-header {
+    div.i-s-header {
         text-align: center;
 
         img {
-            width: 750px;
+            width: 100%;
         }
     }
 
@@ -32,6 +32,76 @@ div.item-section {
             .flag-item {
                 display: table-cell;
                 padding: 10px 0;
+                vertical-align: top;
+            }
+
+            & > a {
+                width: 160px;
+                height: 160px;
+
+                img {
+                    width: 180px;
+                    height: 180px;
+                    vertical-align: top;
+                }
+            }
+
+            div.figcaption {
+                padding: 10px;
+                position: relative;
+
+                div.flag-title {
+                    a {
+                        color: #333;
+                    }
+                }
+
+                div.flag-price {
+                    padding: 5px 0 10px 0;
+
+                    span {
+                        display: inline-block;
+                        background-color: #ee0a3b;
+                        vertical-align: middle;
+                        border-radius: 5px;
+                        padding: 5px 10px;
+                        color: #fff;
+                        font-weight: bold;
+                        margin-right: 15px;
+                    }
+
+                    strong {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-weight: bold;
+                        font-size: 32px; /*px*/
+                        color: #ee0a3b;
+                    }
+
+                    small {
+                        font-size: 24px; /*px*/
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-weight: bold;
+                        color: #ee0a3b;
+                    }
+                }
+
+                div.flag-type {
+                    color: #ff3600;
+                }
+
+                a.flag-btn {
+                    position : absolute;
+                    padding: 5px 10px;
+                    background-color: #ee0a3b;
+                    color: #fff;
+                    text-align: center;
+                    font-weight: bold;
+                    bottom: 5px;
+                    right: 10px;
+                    border-radius: 5px;
+                }
             }
         }
     }
